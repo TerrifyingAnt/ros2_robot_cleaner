@@ -1,0 +1,34 @@
+[1.774s] Invoking command in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spawn_entity build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log --install-scripts $base/lib/spawn_entity --single-version-externally-managed
+[2.084s] running egg_info
+[2.084s] creating ../../build/spawn_entity/spawn_entity.egg-info
+[2.085s] writing ../../build/spawn_entity/spawn_entity.egg-info/PKG-INFO
+[2.086s] writing dependency_links to ../../build/spawn_entity/spawn_entity.egg-info/dependency_links.txt
+[2.086s] writing entry points to ../../build/spawn_entity/spawn_entity.egg-info/entry_points.txt
+[2.086s] writing requirements to ../../build/spawn_entity/spawn_entity.egg-info/requires.txt
+[2.086s] writing top-level names to ../../build/spawn_entity/spawn_entity.egg-info/top_level.txt
+[2.095s] writing manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+[2.125s] reading manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+[2.127s] writing manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+[2.128s] running build
+[2.128s] running build_py
+[2.128s] creating /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build
+[2.128s] creating /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build/lib
+[2.129s] creating /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build/lib/spawn_entity
+[2.129s] copying spawn_entity/__init__.py -> /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build/lib/spawn_entity
+[2.129s] running install
+[2.130s] running install_lib
+[2.132s] creating /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity
+[2.133s] copying /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build/lib/spawn_entity/__init__.py -> /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity
+[2.134s] byte-compiling /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity/__init__.py to __init__.cpython-38.pyc
+[2.137s] running install_data
+[2.138s] creating /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/ament_index
+[2.139s] creating /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/ament_index/resource_index
+[2.139s] creating /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/ament_index/resource_index/packages
+[2.139s] copying resource/spawn_entity -> /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/ament_index/resource_index/packages
+[2.139s] copying package.xml -> /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity
+[2.140s] running install_egg_info
+[2.143s] Copying ../../build/spawn_entity/spawn_entity.egg-info to /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info
+[2.151s] running install_scripts
+[2.178s] Installing spawn_demo script to /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/spawn_entity
+[2.180s] writing list of installed files to '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log'
+[2.221s] Invoked command in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity' returned '0': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spawn_entity build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log --install-scripts $base/lib/spawn_entity --single-version-externally-managed

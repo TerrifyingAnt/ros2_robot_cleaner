@@ -1,0 +1,6 @@
+source;share/spawn_entity/hook/pythonpath.ps1
+source;share/spawn_entity/hook/pythonpath.dsv
+source;share/spawn_entity/hook/pythonpath.sh
+source;share/spawn_entity/hook/ament_prefix_path.ps1
+source;share/spawn_entity/hook/ament_prefix_path.dsv
+source;share/spawn_entity/hook/ament_prefix_path.sh

@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/spawn_entity/spawn_entity.egg-info/PKG-INFO
+writing dependency_links to ../../build/spawn_entity/spawn_entity.egg-info/dependency_links.txt
+writing entry points to ../../build/spawn_entity/spawn_entity.egg-info/entry_points.txt
+writing requirements to ../../build/spawn_entity/spawn_entity.egg-info/requires.txt
+writing top-level names to ../../build/spawn_entity/spawn_entity.egg-info/top_level.txt
+reading manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+writing manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+running build
+running build_py
+copying spawn_entity/__init__.py -> /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build/lib/spawn_entity
+running install
+running install_lib
+copying /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build/lib/spawn_entity/__init__.py -> /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity
+byte-compiling /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity/__init__.py to __init__.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/spawn_entity/spawn_entity.egg-info to /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log'

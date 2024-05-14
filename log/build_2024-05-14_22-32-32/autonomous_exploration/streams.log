@@ -1,0 +1,21 @@
+[13.006s] Invoking command in '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/autonomous_exploration build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log --single-version-externally-managed
+[14.647s] running egg_info
+[14.678s] writing ../../build/autonomous_exploration/autonomous_exploration.egg-info/PKG-INFO
+[14.685s] writing dependency_links to ../../build/autonomous_exploration/autonomous_exploration.egg-info/dependency_links.txt
+[14.687s] writing entry points to ../../build/autonomous_exploration/autonomous_exploration.egg-info/entry_points.txt
+[14.692s] writing requirements to ../../build/autonomous_exploration/autonomous_exploration.egg-info/requires.txt
+[14.699s] writing top-level names to ../../build/autonomous_exploration/autonomous_exploration.egg-info/top_level.txt
+[14.947s] reading manifest file '../../build/autonomous_exploration/autonomous_exploration.egg-info/SOURCES.txt'
+[15.008s] writing manifest file '../../build/autonomous_exploration/autonomous_exploration.egg-info/SOURCES.txt'
+[15.022s] running build
+[15.023s] running build_py
+[15.025s] running install
+[15.043s] running install_lib
+[15.061s] running install_data
+[15.078s] running install_egg_info
+[15.078s] removing '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages/autonomous_exploration-0.0.0-py3.8.egg-info' (and everything under it)
+[15.105s] Copying ../../build/autonomous_exploration/autonomous_exploration.egg-info to /home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages/autonomous_exploration-0.0.0-py3.8.egg-info
+[15.113s] running install_scripts
+[15.263s] Installing control script to /home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/autonomous_exploration
+[15.284s] writing list of installed files to '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log'
+[17.026s] Invoked command in '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration' returned '0': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/autonomous_exploration build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log --single-version-externally-managed
