@@ -1,0 +1,20 @@
+[7.801s] Invoking command in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spawn_entity build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log --install-scripts $base/lib/spawn_entity --single-version-externally-managed
+[8.897s] running egg_info
+[8.907s] writing ../../build/spawn_entity/spawn_entity.egg-info/PKG-INFO
+[8.928s] writing dependency_links to ../../build/spawn_entity/spawn_entity.egg-info/dependency_links.txt
+[8.962s] writing entry points to ../../build/spawn_entity/spawn_entity.egg-info/entry_points.txt
+[8.962s] writing requirements to ../../build/spawn_entity/spawn_entity.egg-info/requires.txt
+[8.962s] writing top-level names to ../../build/spawn_entity/spawn_entity.egg-info/top_level.txt
+[9.260s] reading manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+[9.269s] writing manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'
+[9.278s] running build
+[9.282s] running build_py
+[9.285s] running install
+[9.291s] running install_lib
+[9.300s] running install_data
+[9.302s] running install_egg_info
+[9.319s] removing '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info' (and everything under it)
+[9.326s] Copying ../../build/spawn_entity/spawn_entity.egg-info to /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info
+[9.330s] running install_scripts
+[9.382s] writing list of installed files to '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log'
+[9.564s] Invoked command in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity' returned '0': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spawn_entity build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log --install-scripts $base/lib/spawn_entity --single-version-externally-managed

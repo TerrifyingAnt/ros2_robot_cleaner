@@ -2,7 +2,7 @@
 <sdf version='1.4'>
     <model name="my_robot">
         <static>false</static>
-        <link name='chassis'>  
+        <link name='base_link'>  
             <pose>0 0 .1 0 0 0</pose>  
             <collision name='collision_chassis'>  
                 <geometry>  
@@ -45,7 +45,7 @@
             </visual>
         </link>
 
-        <link name="laser_frame">
+        <link name="laser_link">
             <pose>0 0 .15 0 0 0</pose>
             
             <!-- Add a mesh to make it more visually appealing -->
@@ -94,8 +94,8 @@
                         <remapping>~/out:=/scan</remapping>
                     </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
-                    <frame_name>laser_frame</frame_name>
-                    <robot_base_frame>base_footprint</robot_base_frame>
+                    <frame_name>laser_link</frame_name>
+                    <robot_base_frame>base_link</robot_base_frame>
                 </plugin>
             </sensor>
         </link>
@@ -163,7 +163,7 @@
         <joint type="revolute" name="left_wheel_hinge">  
             <pose>0 0 -0.03 0 0 0</pose>  
             <child>left_wheel</child>  
-            <parent>chassis</parent>  
+            <parent>base_link</parent>  
             <axis>  
                 <xyz>0 1 0</xyz>  
             </axis>  
@@ -172,15 +172,22 @@
         <joint type="revolute" name="right_wheel_hinge">  
             <pose>0 0 0.03 0 0 0</pose>  
             <child>right_wheel</child>  
-            <parent>chassis</parent>  
+            <parent>base_link</parent>  
             <axis>  
                 <xyz>0 1 0</xyz>  
             </axis>  
         </joint>
 
         <joint type="fixed" name="laser_joint">
-            <child>laser_frame</child>
-            <parent>chassis</parent>
+            <child>laser_link</child>
+            <parent>base_link</parent>
+            <pose>0 0 0 0 0 0</pose>
+        </joint>
+
+        <joint name="base_joint" type="fixed">
+            <parent>base_footprint</parent>
+            <child>base_link</child>
+            <pose>0 0 0 0 0 0</pose>
         </joint>
 
         
@@ -210,7 +217,7 @@
         <publish_wheel_tf>true</publish_wheel_tf>
 
         <odometry_frame>odom</odometry_frame>
-        <robot_base_frame>base_footprint</robot_base_frame>
+        <robot_base_frame>base_link</robot_base_frame>
       </plugin>      
 
     </model>

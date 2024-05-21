@@ -1,4 +1,6 @@
 import rclpy
+import cv2
+import yaml
 from rclpy.node import Node
 from nav_msgs.msg import OccupancyGrid , Odometry
 from geometry_msgs.msg import Twist
@@ -206,34 +208,6 @@ def calculate_centroid(x_coords, y_coords):
     centroid = (int(mean_x), int(mean_y))
     return centroid
 
-#Bu fonksiyon en buyuk 5 gruptan target_error*2 uzaklıktan daha uzak olan ve robota en yakın olanı seçer.
-"""
-def findClosestGroup(matrix,groups, current,resolution,originX,originY):
-    targetP = None
-    distances = []
-    paths = []
-    min_index = -1
-    for i in range(len(groups)):
-        middle = calculate_centroid([p[0] for p in groups[i][1]],[p[1] for p in groups[i][1]]) 
-        path = astar(matrix, current, middle)
-        path = [(p[1]*resolution+originX,p[0]*resolution+originY) for p in path]
-        total_distance = pathLength(path)
-        distances.append(total_distance)
-        paths.append(path)
-    for i in range(len(distances)):
-        if distances[i] > target_error*3:
-            if min_index == -1 or distances[i] < distances[min_index]:
-                min_index = i
-    if min_index != -1:
-        targetP = paths[min_index]
-    else: #gruplar target_error*2 uzaklıktan daha yakınsa random bir noktayı hedef olarak seçer. Bu robotun bazı durumlardan kurtulmasını sağlar.
-        index = random.randint(0,len(groups)-1)
-        target = groups[index][1]
-        target = target[random.randint(0,len(target)-1)]
-        path = astar(matrix, current, target)
-        targetP = [(p[1]*resolution+originX,p[0]*resolution+originY) for p in path]
-    return targetP
-"""
 def findClosestGroup(matrix,groups, current,resolution,originX,originY):
     targetP = None
     distances = []
@@ -354,6 +328,7 @@ class navigationControl(Node):
                     self.path = pathGlobal
                 if isinstance(self.path, int) and self.path == -1:
                     print("[BILGI] KESİF TAMAMLANDI")
+                    self.save_map("exploration_map")  # Call the save_map function
                     sys.exit()
                 self.c = int((self.path[-1][0] - self.originX)/self.resolution) 
                 self.r = int((self.path[-1][1] - self.originY)/self.resolution) 
@@ -405,6 +380,35 @@ class navigationControl(Node):
         self.yaw = euler_from_quaternion(msg.pose.pose.orientation.x,msg.pose.pose.orientation.y,
         msg.pose.pose.orientation.z,msg.pose.pose.orientation.w)
 
+    def save_map(self, filename):
+        """
+        Save the map as a PGM file and create a YAML file with map information.
+        """
+        # Convert the map data to a 2D numpy array
+        map_array = np.array(self.data, dtype=np.int8).reshape((self.height, self.width))
+
+        # Save the map as a PGM file
+        pgm_filename = f"{filename}.pgm"
+        cv2.imwrite(pgm_filename, map_array)
+        print(f"Map saved as {pgm_filename}")
+
+        # Create a dictionary with map information
+        map_info = {
+            "resolution": self.resolution,
+            "origin": [self.originX, self.originY, 0.0],
+            "negate": 0,
+            "occupied_thresh": 0.65,
+            "free_thresh": 0.196,
+            "width": self.width,
+            "height": self.height,
+            "map_file": pgm_filename,
+        }
+
+        # Save the map information as a YAML file
+        yaml_filename = f"{filename}.yaml"
+        with open(yaml_filename, "w") as yaml_file:
+            yaml.dump(map_info, yaml_file, default_flow_style=False)
+        print(f"Map information saved as {yaml_filename}")
 
 def main(args=None):
     rclpy.init(args=args)
