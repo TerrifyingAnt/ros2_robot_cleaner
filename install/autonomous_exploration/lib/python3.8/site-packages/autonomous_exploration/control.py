@@ -1,5 +1,6 @@
 import rclpy
 import cv2
+import os
 import yaml
 from rclpy.node import Node
 from nav_msgs.msg import OccupancyGrid , Odometry
@@ -308,7 +309,7 @@ class navigationControl(Node):
         self.subscription = self.create_subscription(Odometry,'odom',self.odom_callback,10)
         self.subscription = self.create_subscription(LaserScan,'scan',self.scan_callback,10)
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
-        print("[BILGI] KESİF MODU AKTİF")
+        print("[EXPLORATION LOG] EXPLORATION BEGIN")
         self.kesif = True
         threading.Thread(target=self.exp).start() #Kesif fonksiyonunu thread olarak calistirir.
         
@@ -327,14 +328,14 @@ class navigationControl(Node):
                 else:
                     self.path = pathGlobal
                 if isinstance(self.path, int) and self.path == -1:
-                    print("[BILGI] KESİF TAMAMLANDI")
-                    self.save_map("exploration_map")  # Call the save_map function
+                    print("[EXPLORATION LOG] EXPLORATION DONE")
+                    self.save_map()  # Call the save_map function
                     sys.exit()
                 self.c = int((self.path[-1][0] - self.originX)/self.resolution) 
                 self.r = int((self.path[-1][1] - self.originY)/self.resolution) 
                 self.kesif = False
                 self.i = 0
-                print("[BILGI] YENI HEDEF BELİRLENDI")
+                print("[EXPLORATION LOG] SET NEW GOAL")
                 t = pathLength(self.path)/speed
                 t = t - 0.2 #x = v * t formülüne göre hesaplanan sureden 0.2 saniye cikarilir. t sure sonra kesif fonksiyonu calistirilir.
                 self.t = threading.Timer(t,self.target_callback) #Hedefe az bir sure kala kesif fonksiyonunu calistirir.
@@ -349,7 +350,7 @@ class navigationControl(Node):
                     v = 0.0
                     w = 0.0
                     self.kesif = True
-                    print("[BILGI] HEDEFE ULASILDI")
+                    print("[EXPLORATION LOG] GOAL ACHIVED")
                     self.t.join() #Thread bitene kadar bekle.
                 twist.linear.x = v
                 twist.angular.z = w
@@ -380,35 +381,33 @@ class navigationControl(Node):
         self.yaw = euler_from_quaternion(msg.pose.pose.orientation.x,msg.pose.pose.orientation.y,
         msg.pose.pose.orientation.z,msg.pose.pose.orientation.w)
 
-    def save_map(self, filename):
-        """
-        Save the map as a PGM file and create a YAML file with map information.
-        """
-        # Convert the map data to a 2D numpy array
-        map_array = np.array(self.data, dtype=np.int8).reshape((self.height, self.width))
+    def save_map(self):
+        map_dir = os.path.join(os.getcwd(), 'maps')
+        if not os.path.exists(map_dir):
+            os.makedirs(map_dir)
 
-        # Save the map as a PGM file
-        pgm_filename = f"{filename}.pgm"
-        cv2.imwrite(pgm_filename, map_array)
-        print(f"Map saved as {pgm_filename}")
+        header = f"P5\n{self.map_data.info.width} {self.map_data.info.height}\n255\n".encode()
+        map_data = header + self.map_data.data
 
-        # Create a dictionary with map information
-        map_info = {
-            "resolution": self.resolution,
-            "origin": [self.originX, self.originY, 0.0],
-            "negate": 0,
-            "occupied_thresh": 0.65,
-            "free_thresh": 0.196,
-            "width": self.width,
-            "height": self.height,
-            "map_file": pgm_filename,
+        map_file = os.path.join(map_dir, 'explored_map.pgm')
+        with open(map_file, 'wb') as f:
+            f.write(map_data)
+
+        # Сохраняем метаданные карты в YAML-файл
+        map_yaml = {
+            'image': map_file,
+            'resolution': self.map_data.info.resolution,
+            'origin': [self.map_data.info.origin.position.x, self.map_data.info.origin.position.y, self.map_data.info.origin.position.z],
+            'negate': 1,
+            'occupied_thresh': 0.65,
+            'free_thresh': 0.196,
         }
 
-        # Save the map information as a YAML file
-        yaml_filename = f"{filename}.yaml"
-        with open(yaml_filename, "w") as yaml_file:
-            yaml.dump(map_info, yaml_file, default_flow_style=False)
-        print(f"Map information saved as {yaml_filename}")
+        yaml_file = os.path.join(map_dir, 'explored_map.yaml')
+        with open(yaml_file, 'w') as f:
+            yaml.dump(map_yaml, f)
+
+        print(f"[BILGI] Карта сохранена в файл: {map_file}")
 
 def main(args=None):
     rclpy.init(args=args)

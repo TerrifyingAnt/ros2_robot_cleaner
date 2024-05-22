@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: /home/ant/gazebo tutorials/home/11_move_around/maps/explored_map.pgm
+negate: 1
+occupied_thresh: 0.65
+origin:
+- -9.872017251229249
+- -4.043215860281905
+- 0.0
+resolution: 0.05000000074505806
