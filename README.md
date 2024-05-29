@@ -8,3 +8,8 @@
  - `ros2 run rviz2 rviz2` - запускает rviz2
  - `ros2 launch slam_toolbox online_async_launch.py` - запускает slam 
  - `ros2 run autonomous_exploration control` - запускает автономный эксплоринг
+ - `ros2 launch turtlebot2_navigation2 navigation2.launch.py map:=my_map.yaml` - запускает пакет с навигацией, где в параметрах передается карта
+
+--- 
+
+После апдейта, теперь запускается все одной командой: `ros2 launch autonomous_exploration star_exploration.launch.py`
