@@ -1,0 +1,335 @@
+<sdf version="1.9">
+<model name="vacuum cleaner" canonical_link="new_link">
+  <joint name="joint_caestar_wheel" type="continuous">
+    <pose relative_to="link_caestar_wheel_joint">-0.00010 -0.00150 -0.01350 -0.00000 1.57080 0.00000</pose>
+    <parent>link_caestar_wheel_joint</parent>
+    <child>link_caestar_wheel</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="joint_caestar_wheel_joint" type="continuous">
+    <pose relative_to="new_link">0.00000 0.16272 -0.01022 0.00000 0.00000 0.00000</pose>
+    <parent>new_link</parent>
+    <child>link_caestar_wheel_joint</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="joint_left_chetka" type="continuous">
+    <pose relative_to="new_link">-0.12416 0.12781 0.00050 0.00000 0.00000 0.00000</pose>
+    <parent>new_link</parent>
+    <child>link_chetka_left</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="joint_left_wheel" type="continuous">
+    <pose relative_to="new_link">-0.11287 -0.05145 -0.00837 0.00000 -1.57080 0.00000</pose>
+    <parent>new_link</parent>
+    <child>link_left_wheel</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.60000</effort>
+        <velocity>0.40000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="joint_right_chetka" type="continuous">
+    <pose relative_to="new_link">0.12494 0.12760 0.00050 0.00000 0.00000 0.00000</pose>
+    <parent>new_link</parent>
+    <child>link_chetka_right</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="joint_right_wheel" type="continuous">
+    <pose relative_to="new_link">0.11287 -0.05145 -0.00837 -0.00000 1.57080 0.00000</pose>
+    <parent>new_link</parent>
+    <child>link_right_wheel</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.60000</effort>
+        <velocity>0.40000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <link name="link_caestar_wheel">
+    <collision name="wheel_caestar_collision">
+      <pose relative_to="link_caestar_wheel">0.00000 -0.00000 0.00000 -3.14159 0.00000 1.57080</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.01207</radius>
+          <length>0.01811</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00017</ixx>
+        <ixy>0.00000</ixy>
+        <ixz>-0.00000</ixz>
+        <iyy>0.00017</iyy>
+        <iyz>-0.00000</iyz>
+        <izz>0.00014</izz>
+      </inertia>
+      <pose relative_to="link_caestar_wheel">-0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="wheel_caestar">
+      <pose relative_to="link_caestar_wheel">-0.00000 0.00000 0.00000 1.57080 0.00000 1.57080</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.01200</radius>
+          <length>0.02396</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_caestar_wheel_joint"/>
+  <link name="link_chetka_left">
+    <collision name="chetka_left_collision">
+      <pose relative_to="link_chetka_left">-0.00000 0.00000 0.00012 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.01420</radius>
+          <length>0.01129</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <collision name="chetka_left_collision.000">
+      <pose relative_to="link_chetka_left">-0.00000 0.00000 0.00012 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.01420</radius>
+          <length>0.01129</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00070</ixx>
+        <ixy>-0.00000</ixy>
+        <ixz>-0.00000</ixz>
+        <iyy>0.00069</iyy>
+        <iyz>-0.00000</iyz>
+        <izz>0.00053</izz>
+      </inertia>
+      <pose relative_to="link_chetka_left">-0.00000 0.00000 0.00048 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="chetka_left">
+      <pose relative_to="link_chetka_left">-0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/chetka.001.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_chetka_right">
+    <collision name="chetka_right_collision">
+      <pose relative_to="link_chetka_right">0.00000 -0.00000 0.00014 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.01735</radius>
+          <length>0.01379</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00070</ixx>
+        <ixy>-0.00000</ixy>
+        <ixz>-0.00000</ixz>
+        <iyy>0.00069</iyy>
+        <iyz>-0.00000</iyz>
+        <izz>0.00053</izz>
+      </inertia>
+      <pose relative_to="link_chetka_right">0.00000 -0.00000 0.00048 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="chetka_right">
+      <pose relative_to="link_chetka_right">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/chetka.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_wheel">
+    <collision name="wheel_left_collision">
+      <pose relative_to="link_left_wheel">0.00000 0.00000 -0.00000 3.14159 -0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03603</radius>
+          <length>0.06589</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00075</ixx>
+        <ixy>0.00000</ixy>
+        <ixz>-0.00000</ixz>
+        <iyy>0.00079</iyy>
+        <iyz>-0.00000</iyz>
+        <izz>0.00079</izz>
+      </inertia>
+      <pose relative_to="link_left_wheel">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="wheel_left">
+      <pose relative_to="link_left_wheel">0.00000 0.00000 0.00000 3.14159 -0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.02734</radius>
+          <length>0.05000</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_wheel">
+    <collision name="wheel_right_collision">
+      <pose relative_to="link_right_wheel">-0.00000 0.00000 -0.00000 3.14159 0.00000 -0.93878</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.00423</radius>
+          <length>0.00773</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <collision name="wheel_right_collision.000">
+      <pose relative_to="link_right_wheel">-0.00000 0.00000 -0.00000 3.14159 0.00000 -0.93878</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.02765</radius>
+          <length>0.05056</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00075</ixx>
+        <ixy>0.00000</ixy>
+        <ixz>0.00000</ixz>
+        <iyy>0.00079</iyy>
+        <iyz>0.00000</iyz>
+        <izz>0.00079</izz>
+      </inertia>
+      <pose relative_to="link_right_wheel">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="wheel_right">
+      <pose relative_to="link_right_wheel">0.00000 0.00000 -0.00000 3.14159 0.00000 -0.93878</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.02734</radius>
+          <length>0.05000</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="new_link">
+    <collision name="body_collision">
+      <pose relative_to="new_link">0.00000 0.00000 0.02500 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.22000</radius>
+          <length>0.05000</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.02462</ixx>
+        <ixy>0.00000</ixy>
+        <ixz>0.00000</ixz>
+        <iyy>0.02462</iyy>
+        <iyz>0.00000</iyz>
+        <izz>0.04840</izz>
+      </inertia>
+      <pose relative_to="new_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="body">
+      <pose relative_to="new_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.22000</radius>
+          <length>0.05000</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+    <joint_name>joint_left_wheel</joint_name>
+    <p_gain>20.00000</p_gain>
+    <i_gain>0.00000</i_gain>
+    <d_gain>0.00000</d_gain>
+  </plugin>
+  <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+    <joint_name>joint_right_wheel</joint_name>
+    <p_gain>20.00000</p_gain>
+    <i_gain>0.00000</i_gain>
+    <d_gain>0.00000</d_gain>
+  </plugin>
+</model>
+</sdf>

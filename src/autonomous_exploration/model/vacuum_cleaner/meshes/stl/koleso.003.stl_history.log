@@ -1,0 +1,3 @@
+Instantiated with filepath=None->None, scale=[1.0, 0.9999996423721313, 0.9999996423721313], mesh=<bpy_struct, Mesh("koleso.003") at 0x0000020547830B88>, meshname=koleso.003, material=None, mesh_orientation=None, {}
+->trying export of <bpy_struct, Mesh("koleso.003") at 0x0000020547830B88> to D:\desktop\Инстиутут\Лаба\Курс по gazebo\занятие я сбился со счета\vacuum_cleaner\meshes\stl\koleso.003.stl
+->wrote stl to D:\desktop\Инстиутут\Лаба\Курс по gazebo\занятие я сбился со счета\vacuum_cleaner\meshes\stl\koleso.003.stl from bpy_types.Mesh

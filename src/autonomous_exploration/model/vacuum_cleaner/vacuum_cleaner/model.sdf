@@ -1,0 +1,285 @@
+<sdf version="1.9">
+<model name="vacuum_cleaner" canonical_link="body_link">
+  <joint name="caestar_wheel_joint_joint" type="continuous">
+    <pose relative_to="body_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+    <parent>body_link</parent>
+    <child>caestar_wheel_joint_link</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>0.00000 0.00000 1.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="caestar_wheel_real_joint" type="continuous">
+    <pose relative_to="caestar_wheel_joint_link">0.00000 -0.00000 -0.00000 0.00000 0.00000 -0.00000</pose>
+    <parent>caestar_wheel_joint_link</parent>
+    <child>caestar_wheel_link</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>1.00000 0.00000 0.00000</xyz>
+    </axis>
+  </joint>
+  <joint name="left_wheel_joint" type="continuous">
+    <pose relative_to="body_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+    <parent>body_link</parent>
+    <child>left_wheel_link</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>-1.00000 0.00000 0.00000</xyz>
+    </axis>
+  </joint>
+
+  <joint name="lidar_joint" type="fixed">
+    <pose relative_to="body_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+    <parent>body_link</parent>
+    <child>Cylinder_link.001</child>
+    <axis/>
+  </joint>
+
+  <joint name="right_wheel_joint" type="continuous">
+    <pose relative_to="body_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+    <parent>body_link</parent>
+    <child>right_wheel_link</child>
+    <axis>
+      <limit>
+        <lower>0</lower>
+        <upper>0</upper>
+        <effort>0.00000</effort>
+        <velocity>0.00000</velocity>
+      </limit>
+      <xyz>1.00000 0.00000 0.00000</xyz>
+    </axis>
+  </joint>
+  <link name="Cylinder_link.001">
+    <collision name="Cylinder_collision">
+      <pose relative_to="Cylinder_link.001">0.00000 0.00000 0.06253 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.01676</radius>
+          <length>0.03351</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <visual name="Cylinder">
+      <pose relative_to="Cylinder_link.001">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/Cylinder.005.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+
+        <sensor name="laser" type="ray">
+          <pose relative_to="Cylinder_link.001">0.00000 0.00000 0.06253 0.00000 0.00000 0.00000</pose>
+          <ray>
+          <scan>
+          <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14</min_angle>
+              <max_angle>3.14</max_angle>
+          </horizontal>
+          </scan>
+          <range>
+          <min>0.08</min>
+          <max>10</max>
+          <resolution>0.05</resolution>
+          </range>
+      </ray>
+      <always_on>1</always_on>
+      <update_rate>10</update_rate>
+      <visualize>true</visualize>
+
+      <plugin name='laser' filename='libgazebo_ros_ray_sensor.so'>
+          <ros>
+              <remapping>~/out:=/scan</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>laser_link</frame_name>
+          <robot_base_frame>base_link</robot_base_frame>
+      </plugin>
+  </sensor>
+  </link>
+  <link name="body_link">
+    <collision name="body_collision">
+      <pose relative_to="body_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.22000</radius>
+          <length>0.05000</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <collision name="body_collision.000">
+      <pose relative_to="body_link">0.00000 0.00000 0.02500 0.00000 0.00000 -0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.22000</radius>
+          <length>0.05000</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.02462</ixx>
+        <ixy>-0.00000</ixy>
+        <ixz>0.00000</ixz>
+        <iyy>0.02462</iyy>
+        <iyz>0.00000</iyz>
+        <izz>0.04840</izz>
+      </inertia>
+      <pose relative_to="body_link">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="body">
+      <pose relative_to="body_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/korp.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <link name="caestar_wheel_joint_link">
+    <visual name="caestar_wheel_joint">
+      <pose relative_to="caestar_wheel_joint_link">0.00000 -0.00000 -0.00000 0.00000 0.00000 -0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/pered koleso.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <link name="caestar_wheel_link">
+    <collision name="caestar_wheel_collision">
+      <pose relative_to="caestar_wheel_link">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.00900</radius>
+          <length>0.02400</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00014</ixx>
+        <ixy>0.00000</ixy>
+        <ixz>0.00000</ixz>
+        <iyy>0.00013</iyy>
+        <iyz>0.00000</iyz>
+        <izz>0.00013</izz>
+      </inertia>
+      <pose relative_to="caestar_wheel_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="caestar_wheel">
+      <pose relative_to="caestar_wheel_link">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/pered koleso.001.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <link name="left_wheel_link">
+    <collision name="left_wheel_collision">
+      <pose relative_to="left_wheel_link">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.02500</radius>
+          <length>0.05471</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00075</ixx>
+        <ixy>-0.00000</ixy>
+        <ixz>-0.00000</ixz>
+        <iyy>0.00079</iyy>
+        <iyz>0.00000</iyz>
+        <izz>0.00079</izz>
+      </inertia>
+      <pose relative_to="left_wheel_link">0.00000 0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="left_wheel">
+      <pose relative_to="left_wheel_link">0.00000 0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/koleso.001.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_wheel_link">
+    <collision name="right_wheel_collision">
+      <pose relative_to="right_wheel_link">0.00000 -0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.02500</radius>
+          <length>0.05471</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact/>
+      </surface>
+    </collision>
+    <inertial>
+      <inertia>
+        <ixx>0.00075</ixx>
+        <ixy>-0.00000</ixy>
+        <ixz>-0.00000</ixz>
+        <iyy>0.00079</iyy>
+        <iyz>-0.00000</iyz>
+        <izz>0.00079</izz>
+      </inertia>
+      <pose relative_to="right_wheel_link">0.00000 -0.00000 0.00000 0.00000 0.00000 0.00000</pose>
+      <mass>2.00000</mass>
+    </inertial>
+    <visual name="right_wheel">
+      <pose relative_to="right_wheel_link">0.00000 -0.00000 -0.00000 0.00000 0.00000 0.00000</pose>
+      <geometry>
+        <mesh>
+          <uri>../meshes/stl/koleso.003.stl</uri>
+          <scale>1.00000 1.00000 1.00000</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+</model>
+</sdf>

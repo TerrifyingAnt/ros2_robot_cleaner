@@ -1,0 +1,191 @@
+[16.535s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[16.536s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8bf81f7e20>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=2, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8bf81f7e20>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8bf7ea7490>)
+[17.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[17.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[17.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[17.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[17.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[17.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[17.086s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ant/gazebo tutorials/home/11_move_around'
+[17.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[17.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[17.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[17.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[17.087s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[17.087s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[17.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[17.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[17.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[17.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[17.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[17.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[17.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[17.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[17.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[17.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[17.122s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[17.123s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[17.124s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[17.124s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[17.125s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[17.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[17.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[17.126s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ignore', 'ignore_ament_install']
+[17.127s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore'
+[17.127s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore_ament_install'
+[17.127s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_pkg']
+[17.127s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_pkg'
+[17.128s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_meta']
+[17.128s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_meta'
+[17.128s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ros']
+[17.128s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ros'
+[17.129s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['cmake', 'python']
+[17.129s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'cmake'
+[17.129s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python'
+[17.129s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['python_setup_py']
+[17.130s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python_setup_py'
+[17.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[17.131s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[17.131s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[17.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[17.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[17.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[17.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[17.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[17.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[17.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[17.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[17.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[17.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[17.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[17.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['ignore', 'ignore_ament_install']
+[17.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'ignore'
+[17.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'ignore_ament_install'
+[17.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['colcon_pkg']
+[17.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'colcon_pkg'
+[17.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['colcon_meta']
+[17.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'colcon_meta'
+[17.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['ros']
+[17.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'ros'
+[17.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomous_exploration' with type 'ros.ament_python' and name 'autonomous_exploration'
+[17.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extensions ['ignore', 'ignore_ament_install']
+[17.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extension 'ignore'
+[17.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extension 'ignore_ament_install'
+[17.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extensions ['colcon_pkg']
+[17.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extension 'colcon_pkg'
+[17.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extensions ['colcon_meta']
+[17.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extension 'colcon_meta'
+[17.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extensions ['ros']
+[17.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/spawn_entity) by extension 'ros'
+[17.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spawn_entity' with type 'ros.ament_python' and name 'spawn_entity'
+[17.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[17.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[17.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[17.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[17.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[18.863s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[18.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[19.603s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ant/gazebo tutorials/home/11_move_around/install
+[19.975s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 372 installed packages in /opt/ros/foxy
+[19.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[20.841s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_args' from command line to 'None'
+[20.852s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_target' from command line to 'None'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_clean_cache' from command line to 'False'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_clean_first' from command line to 'False'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_force_configure' from command line to 'False'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'ament_cmake_args' from command line to 'None'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'catkin_cmake_args' from command line to 'None'
+[20.854s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[20.854s] DEBUG:colcon.colcon_core.verb:Building package 'autonomous_exploration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration', 'merge_install': False, 'path': '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration', 'symlink_install': False, 'test_result_base': None}
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'cmake_args' from command line to 'None'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'cmake_target' from command line to 'None'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'cmake_clean_cache' from command line to 'False'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'cmake_clean_first' from command line to 'False'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'cmake_force_configure' from command line to 'False'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'ament_cmake_args' from command line to 'None'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'catkin_cmake_args' from command line to 'None'
+[21.072s] Level 5:colcon.colcon_core.verb:set package 'spawn_entity' build argument 'catkin_skip_building_tests' from command line to 'False'
+[21.072s] DEBUG:colcon.colcon_core.verb:Building package 'spawn_entity' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity', 'merge_install': False, 'path': '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity', 'symlink_install': False, 'test_result_base': None}
+[21.372s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[21.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[21.668s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration' with build type 'ament_python'
+[21.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('autonomous_exploration', 'ament_prefix_path')
+[22.059s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[22.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/hook/ament_prefix_path.ps1'
+[22.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/hook/ament_prefix_path.dsv'
+[22.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/hook/ament_prefix_path.sh'
+[22.472s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.472s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.520s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity' with build type 'ament_python'
+[23.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('spawn_entity', 'ament_prefix_path')
+[23.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/hook/ament_prefix_path.ps1'
+[23.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/hook/ament_prefix_path.dsv'
+[23.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/hook/ament_prefix_path.sh'
+[24.184s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.094s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration'
+[26.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[28.203s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity'
+[28.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[28.523s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/autonomous_exploration build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log --single-version-externally-managed
+[33.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spawn_entity build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log --install-scripts $base/lib/spawn_entity --single-version-externally-managed
+[35.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration' returned '0': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/autonomous_exploration build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log --single-version-externally-managed
+[35.835s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration' for CMake module files
+[35.836s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration' for CMake config files
+[35.837s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib'
+[35.838s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/bin'
+[35.838s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/pkgconfig/autonomous_exploration.pc'
+[35.838s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages'
+[35.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('autonomous_exploration', 'pythonpath')
+[36.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/hook/pythonpath.ps1'
+[36.110s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/hook/pythonpath.dsv'
+[36.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/hook/pythonpath.sh'
+[36.116s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/bin'
+[36.116s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autonomous_exploration)
+[36.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/package.ps1'
+[36.419s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/package.dsv'
+[36.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/package.sh'
+[36.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/package.bash'
+[36.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/autonomous_exploration/package.zsh'
+[36.440s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/share/colcon-core/packages/autonomous_exploration)
+[36.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity' returned '0': PYTHONPATH=/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spawn_entity build --build-base /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build install --record /home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log --install-scripts $base/lib/spawn_entity --single-version-externally-managed
+[36.850s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity' for CMake module files
+[36.850s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity' for CMake config files
+[36.851s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib'
+[36.851s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/bin'
+[36.851s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/pkgconfig/spawn_entity.pc'
+[36.852s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages'
+[36.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('spawn_entity', 'pythonpath')
+[37.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/hook/pythonpath.ps1'
+[37.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/hook/pythonpath.dsv'
+[37.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/hook/pythonpath.sh'
+[37.313s] Level 1:colcon.colcon_core.environment:checking '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/bin'
+[37.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spawn_entity)
+[37.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/package.ps1'
+[37.674s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/package.dsv'
+[37.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/package.sh'
+[37.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/package.bash'
+[37.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/spawn_entity/package.zsh'
+[37.689s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/share/colcon-core/packages/spawn_entity)
+[37.695s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[37.695s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[37.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[37.701s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[38.011s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[38.011s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[38.011s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[38.203s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[38.503s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ant/gazebo tutorials/home/11_move_around/install/local_setup.ps1'
+[38.505s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ant/gazebo tutorials/home/11_move_around/install/_local_setup_util_ps1.py'
+[38.507s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ant/gazebo tutorials/home/11_move_around/install/setup.ps1'
+[38.786s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ant/gazebo tutorials/home/11_move_around/install/local_setup.sh'
+[38.788s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ant/gazebo tutorials/home/11_move_around/install/_local_setup_util_sh.py'
+[38.798s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ant/gazebo tutorials/home/11_move_around/install/setup.sh'
+[39.030s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ant/gazebo tutorials/home/11_move_around/install/local_setup.bash'
+[39.031s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ant/gazebo tutorials/home/11_move_around/install/setup.bash'
+[39.320s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ant/gazebo tutorials/home/11_move_around/install/local_setup.zsh'
+[39.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ant/gazebo tutorials/home/11_move_around/install/setup.zsh'

@@ -330,6 +330,7 @@ class navigationControl(Node):
                 if isinstance(self.path, int) and self.path == -1:
                     print("[EXPLORATION LOG] EXPLORATION DONE")
                     self.save_map()  # Call the save_map function
+                    rclpy.shutdown()
                     sys.exit()
                 self.c = int((self.path[-1][0] - self.originX)/self.resolution) 
                 self.r = int((self.path[-1][1] - self.originY)/self.resolution) 

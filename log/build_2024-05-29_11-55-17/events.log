@@ -1,0 +1,182 @@
+[0.000000] (-) TimerEvent: {}
+[0.002404] (autonomous_exploration) JobQueued: {'identifier': 'autonomous_exploration', 'dependencies': OrderedDict()}
+[0.002453] (spawn_entity) JobQueued: {'identifier': 'spawn_entity', 'dependencies': OrderedDict()}
+[0.002476] (autonomous_exploration) JobStarted: {'identifier': 'autonomous_exploration'}
+[0.105163] (-) TimerEvent: {}
+[0.207939] (-) TimerEvent: {}
+[0.316365] (-) TimerEvent: {}
+[0.418953] (-) TimerEvent: {}
+[0.520929] (-) TimerEvent: {}
+[0.626625] (-) TimerEvent: {}
+[0.735453] (-) TimerEvent: {}
+[0.839817] (-) TimerEvent: {}
+[0.946445] (-) TimerEvent: {}
+[1.050215] (-) TimerEvent: {}
+[1.161219] (-) TimerEvent: {}
+[1.242903] (spawn_entity) JobStarted: {'identifier': 'spawn_entity'}
+[1.267596] (-) TimerEvent: {}
+[1.375810] (-) TimerEvent: {}
+[1.481378] (-) TimerEvent: {}
+[1.585993] (-) TimerEvent: {}
+[1.687805] (-) TimerEvent: {}
+[1.792021] (-) TimerEvent: {}
+[1.896355] (-) TimerEvent: {}
+[2.000809] (-) TimerEvent: {}
+[2.101815] (-) TimerEvent: {}
+[2.207655] (-) TimerEvent: {}
+[2.313687] (-) TimerEvent: {}
+[2.416830] (-) TimerEvent: {}
+[2.518495] (-) TimerEvent: {}
+[2.620409] (-) TimerEvent: {}
+[2.721884] (-) TimerEvent: {}
+[2.822786] (-) TimerEvent: {}
+[2.924812] (-) TimerEvent: {}
+[3.025791] (-) TimerEvent: {}
+[3.127493] (-) TimerEvent: {}
+[3.229360] (-) TimerEvent: {}
+[3.330693] (-) TimerEvent: {}
+[3.431897] (-) TimerEvent: {}
+[3.534938] (-) TimerEvent: {}
+[3.639581] (-) TimerEvent: {}
+[3.745469] (-) TimerEvent: {}
+[3.852740] (-) TimerEvent: {}
+[3.954104] (-) TimerEvent: {}
+[4.057131] (-) TimerEvent: {}
+[4.159359] (-) TimerEvent: {}
+[4.260601] (-) TimerEvent: {}
+[4.363045] (-) TimerEvent: {}
+[4.464012] (-) TimerEvent: {}
+[4.566070] (-) TimerEvent: {}
+[4.667258] (-) TimerEvent: {}
+[4.768162] (-) TimerEvent: {}
+[4.869847] (-) TimerEvent: {}
+[4.971135] (-) TimerEvent: {}
+[5.072902] (-) TimerEvent: {}
+[5.173368] (-) TimerEvent: {}
+[5.277977] (-) TimerEvent: {}
+[5.388608] (-) TimerEvent: {}
+[5.494268] (-) TimerEvent: {}
+[5.595565] (-) TimerEvent: {}
+[5.701827] (-) TimerEvent: {}
+[5.811589] (-) TimerEvent: {}
+[5.920832] (-) TimerEvent: {}
+[6.022964] (-) TimerEvent: {}
+[6.124330] (-) TimerEvent: {}
+[6.225589] (-) TimerEvent: {}
+[6.327493] (-) TimerEvent: {}
+[6.428858] (-) TimerEvent: {}
+[6.531514] (-) TimerEvent: {}
+[6.632865] (-) TimerEvent: {}
+[6.734030] (-) TimerEvent: {}
+[6.834857] (-) TimerEvent: {}
+[6.935810] (-) TimerEvent: {}
+[7.038654] (-) TimerEvent: {}
+[7.141475] (-) TimerEvent: {}
+[7.242435] (-) TimerEvent: {}
+[7.343361] (-) TimerEvent: {}
+[7.449953] (-) TimerEvent: {}
+[7.551606] (-) TimerEvent: {}
+[7.655200] (-) TimerEvent: {}
+[7.760293] (-) TimerEvent: {}
+[7.862104] (-) TimerEvent: {}
+[7.963594] (-) TimerEvent: {}
+[8.065558] (-) TimerEvent: {}
+[8.167524] (-) TimerEvent: {}
+[8.269707] (-) TimerEvent: {}
+[8.370596] (-) TimerEvent: {}
+[8.471529] (-) TimerEvent: {}
+[8.573071] (-) TimerEvent: {}
+[8.682568] (-) TimerEvent: {}
+[8.784023] (-) TimerEvent: {}
+[8.885012] (-) TimerEvent: {}
+[8.955321] (autonomous_exploration) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/autonomous_exploration', 'build', '--build-base', '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build', 'install', '--record', '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log', '--single-version-externally-managed'], 'cwd': '/home/ant/gazebo tutorials/home/11_move_around/src/autonomous_exploration', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ant', 'GIO_MODULE_DIR': '/home/ant/snap/code/common/.cache/gio-modules', 'SSH_AGENT_PID': '1658', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/159/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/ant', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.89.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/159/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/ant/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/159/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/159/usr/share/code/code', 'MANAGERPID': '1485', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6452', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ant', 'JOURNAL_STREAM': '8:58521', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'ant', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/ant/.local/bin:/opt/ros/foxy/bin:/home/ant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1695,unix/ubuntu:/tmp/.ICE-unix/1695', 'GTK_EXE_PREFIX': '/snap/code/159/usr', 'INVOCATION_ID': '05ef689b4f8848c285b38c99c3c022c7', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/159/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0bec3e8ffa.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/ant/snap/code/159/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/ant/snap/code/159/.local/share:/home/ant/snap/code/159:/snap/code/159/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[8.987912] (-) TimerEvent: {}
+[9.085447] (spawn_entity) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/spawn_entity', 'build', '--build-base', '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/build', 'install', '--record', '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log', '--install-scripts', '$base/lib/spawn_entity', '--single-version-externally-managed'], 'cwd': '/home/ant/gazebo tutorials/home/11_move_around/src/spawn_entity', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ant', 'GIO_MODULE_DIR': '/home/ant/snap/code/common/.cache/gio-modules', 'SSH_AGENT_PID': '1658', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/159/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/ant', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.89.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/159/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/ant/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/159/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/159/usr/share/code/code', 'MANAGERPID': '1485', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6452', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ant', 'JOURNAL_STREAM': '8:58521', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'ant', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/ant/.local/bin:/opt/ros/foxy/bin:/home/ant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1695,unix/ubuntu:/tmp/.ICE-unix/1695', 'GTK_EXE_PREFIX': '/snap/code/159/usr', 'INVOCATION_ID': '05ef689b4f8848c285b38c99c3c022c7', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/159/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0bec3e8ffa.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/ant/snap/code/159/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/ant/snap/code/159/.local/share:/home/ant/snap/code/159:/snap/code/159/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/prefix_override:/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[9.109366] (-) TimerEvent: {}
+[9.215152] (-) TimerEvent: {}
+[9.318256] (-) TimerEvent: {}
+[9.420662] (-) TimerEvent: {}
+[9.524296] (-) TimerEvent: {}
+[9.628725] (-) TimerEvent: {}
+[9.730962] (-) TimerEvent: {}
+[9.835612] (-) TimerEvent: {}
+[9.936680] (-) TimerEvent: {}
+[10.038351] (-) TimerEvent: {}
+[10.142611] (-) TimerEvent: {}
+[10.243815] (-) TimerEvent: {}
+[10.345424] (-) TimerEvent: {}
+[10.446555] (-) TimerEvent: {}
+[10.480465] (autonomous_exploration) StdoutLine: {'line': b'running egg_info\n'}
+[10.484907] (autonomous_exploration) StdoutLine: {'line': b'writing ../../build/autonomous_exploration/autonomous_exploration.egg-info/PKG-INFO\n'}
+[10.497076] (autonomous_exploration) StdoutLine: {'line': b'writing dependency_links to ../../build/autonomous_exploration/autonomous_exploration.egg-info/dependency_links.txt\n'}
+[10.505986] (autonomous_exploration) StdoutLine: {'line': b'writing entry points to ../../build/autonomous_exploration/autonomous_exploration.egg-info/entry_points.txt\n'}
+[10.511222] (autonomous_exploration) StdoutLine: {'line': b'writing requirements to ../../build/autonomous_exploration/autonomous_exploration.egg-info/requires.txt\n'}
+[10.517632] (autonomous_exploration) StdoutLine: {'line': b'writing top-level names to ../../build/autonomous_exploration/autonomous_exploration.egg-info/top_level.txt\n'}
+[10.548277] (-) TimerEvent: {}
+[10.650440] (-) TimerEvent: {}
+[10.744950] (spawn_entity) StdoutLine: {'line': b'running egg_info\n'}
+[10.756834] (-) TimerEvent: {}
+[10.759920] (spawn_entity) StdoutLine: {'line': b'writing ../../build/spawn_entity/spawn_entity.egg-info/PKG-INFO\n'}
+[10.777924] (spawn_entity) StdoutLine: {'line': b'writing dependency_links to ../../build/spawn_entity/spawn_entity.egg-info/dependency_links.txt\n'}
+[10.781288] (spawn_entity) StdoutLine: {'line': b'writing entry points to ../../build/spawn_entity/spawn_entity.egg-info/entry_points.txt\n'}
+[10.783999] (spawn_entity) StdoutLine: {'line': b'writing requirements to ../../build/spawn_entity/spawn_entity.egg-info/requires.txt\n'}
+[10.795019] (spawn_entity) StdoutLine: {'line': b'writing top-level names to ../../build/spawn_entity/spawn_entity.egg-info/top_level.txt\n'}
+[10.803235] (autonomous_exploration) StdoutLine: {'line': b"reading manifest file '../../build/autonomous_exploration/autonomous_exploration.egg-info/SOURCES.txt'\n"}
+[10.813645] (autonomous_exploration) StdoutLine: {'line': b"writing manifest file '../../build/autonomous_exploration/autonomous_exploration.egg-info/SOURCES.txt'\n"}
+[10.815748] (autonomous_exploration) StdoutLine: {'line': b'running build\n'}
+[10.816228] (autonomous_exploration) StdoutLine: {'line': b'running build_py\n'}
+[10.825544] (autonomous_exploration) StdoutLine: {'line': b'copying autonomous_exploration/control.py -> /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build/lib/autonomous_exploration\n'}
+[10.833520] (autonomous_exploration) StdoutLine: {'line': b'running install\n'}
+[10.837224] (autonomous_exploration) StdoutLine: {'line': b'running install_lib\n'}
+[10.847778] (autonomous_exploration) StdoutLine: {'line': b'copying /home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/build/lib/autonomous_exploration/control.py -> /home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages/autonomous_exploration\n'}
+[10.855058] (autonomous_exploration) StdoutLine: {'line': b'byte-compiling /home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages/autonomous_exploration/control.py to control.cpython-38.pyc\n'}
+[10.857559] (-) TimerEvent: {}
+[10.904709] (autonomous_exploration) StdoutLine: {'line': b'running install_data\n'}
+[10.907602] (autonomous_exploration) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.917220] (autonomous_exploration) StdoutLine: {'line': b"removing '/home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages/autonomous_exploration-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.949135] (autonomous_exploration) StdoutLine: {'line': b'Copying ../../build/autonomous_exploration/autonomous_exploration.egg-info to /home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/python3.8/site-packages/autonomous_exploration-0.0.0-py3.8.egg-info\n'}
+[10.951215] (autonomous_exploration) StdoutLine: {'line': b'running install_scripts\n'}
+[10.958492] (-) TimerEvent: {}
+[11.062784] (-) TimerEvent: {}
+[11.063740] (spawn_entity) StdoutLine: {'line': b"reading manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'\n"}
+[11.070135] (spawn_entity) StdoutLine: {'line': b"writing manifest file '../../build/spawn_entity/spawn_entity.egg-info/SOURCES.txt'\n"}
+[11.072214] (spawn_entity) StdoutLine: {'line': b'running build\n'}
+[11.073057] (spawn_entity) StdoutLine: {'line': b'running build_py\n'}
+[11.073711] (spawn_entity) StdoutLine: {'line': b'running install\n'}
+[11.093848] (spawn_entity) StdoutLine: {'line': b'running install_lib\n'}
+[11.101667] (spawn_entity) StdoutLine: {'line': b'running install_data\n'}
+[11.108102] (spawn_entity) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.126214] (autonomous_exploration) StdoutLine: {'line': b'Installing control script to /home/ant/gazebo tutorials/home/11_move_around/install/autonomous_exploration/lib/autonomous_exploration\n'}
+[11.128279] (spawn_entity) StdoutLine: {'line': b"removing '/home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.130897] (autonomous_exploration) StdoutLine: {'line': b"writing list of installed files to '/home/ant/gazebo tutorials/home/11_move_around/build/autonomous_exploration/install.log'\n"}
+[11.141996] (spawn_entity) StdoutLine: {'line': b'Copying ../../build/spawn_entity/spawn_entity.egg-info to /home/ant/gazebo tutorials/home/11_move_around/install/spawn_entity/lib/python3.8/site-packages/spawn_entity-0.0.0-py3.8.egg-info\n'}
+[11.161735] (spawn_entity) StdoutLine: {'line': b'running install_scripts\n'}
+[11.163286] (-) TimerEvent: {}
+[11.264784] (-) TimerEvent: {}
+[11.285946] (spawn_entity) StdoutLine: {'line': b"writing list of installed files to '/home/ant/gazebo tutorials/home/11_move_around/build/spawn_entity/install.log'\n"}
+[11.366292] (-) TimerEvent: {}
+[11.451374] (autonomous_exploration) CommandEnded: {'returncode': 0}
+[11.479898] (-) TimerEvent: {}
+[11.581686] (-) TimerEvent: {}
+[11.684960] (-) TimerEvent: {}
+[11.787451] (-) TimerEvent: {}
+[11.889092] (-) TimerEvent: {}
+[11.991008] (-) TimerEvent: {}
+[12.093145] (-) TimerEvent: {}
+[12.205261] (-) TimerEvent: {}
+[12.306789] (-) TimerEvent: {}
+[12.408157] (-) TimerEvent: {}
+[12.509664] (-) TimerEvent: {}
+[12.586086] (autonomous_exploration) JobEnded: {'identifier': 'autonomous_exploration', 'rc': 0}
+[12.589318] (spawn_entity) CommandEnded: {'returncode': 0}
+[12.611387] (-) TimerEvent: {}
+[12.714209] (-) TimerEvent: {}
+[12.827518] (-) TimerEvent: {}
+[12.936691] (-) TimerEvent: {}
+[13.044336] (-) TimerEvent: {}
+[13.145433] (-) TimerEvent: {}
+[13.255002] (-) TimerEvent: {}
+[13.361438] (-) TimerEvent: {}
+[13.463833] (-) TimerEvent: {}
+[13.494566] (spawn_entity) JobEnded: {'identifier': 'spawn_entity', 'rc': 0}
+[13.500199] (-) EventReactorShutdown: {}
